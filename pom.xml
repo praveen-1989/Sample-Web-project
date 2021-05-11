@@ -42,7 +42,24 @@
           <target>1.7</target>
         </configuration>
       </plugin>
-	  
+<plugin>
+         <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.2</version>
+   <configuration>
+   
+	<url>http://localhost:9090/manager/text</url>
+               <username>tomcat9</username>
+               <password>tomcat9</password>
+    </configuration>
+</plugin>	    
+	    
+	    
+ <plugin>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.7.0.1746</version>
+      </plugin>
 	  
 	  <plugin>
          <groupId>org.apache.tomcat.maven</groupId>
